@@ -4,7 +4,7 @@ import functional.*
 
 data class Data(val value: String?)
 
-data class Request(val name : String, val data : Data)
+class Request(val name : String, val data : Data)
 
 sealed class Error {
     class ValidationError(val text : String) : Error()
